@@ -15,5 +15,5 @@
 8.查看 C:/soft/WWW/opcache 目录下是否存在一份 opcache 编译后的bin文件（下面称呼该目录为 B）<br /> 
 9.如果存在，恭喜您，您已经编译成功<br /> 
 10.现在您可以使用 A+B 来访问您的项目了，但是前提条件是请在使用这份代码的服务器上，设置 php.ini 中 opcache.validate_timestamps=0，来确保您的bin文件不需要校验（如果校验必定会被替换），另外您可以放心大胆的将
-opcache.revalidate_freq=99999设置的足够大，因为您的代码的中间件是永远不变的
+opcache.revalidate_freq=99999设置的足够大，因为您的代码的中间件是永远不变的<br /> 
 11.如果以后需要重新编译，请重复第7步，然后将以前的代码全部覆盖<br /> 
